@@ -1,18 +1,17 @@
 import "./App.css";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { Map } from "./Map";
 
 const Wrapper = styled.div`
   ${tw`w-full h-full`};
-
-  border: 1px solid red;
 `;
 
 function App() {
   return (
-    <>
-      <Wrapper>hello world</Wrapper>
-    </>
+    <Wrapper>
+      <Map />
+    </Wrapper>
   );
 }
 
